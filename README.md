@@ -1,5 +1,5 @@
 # preview 
-I use java/python/c#/js at the same time, making me confusing at times.  
+I use java/python/c#/js at the same time, making me confused at times.  
 So I want to develop a code generator for reference.   
 ![5d59b4fce08d30cf402195ac8ca59b0](https://user-images.githubusercontent.com/55687413/201046892-9570777a-2c81-4ebe-bc7f-eac8b72fb136.png)
 
