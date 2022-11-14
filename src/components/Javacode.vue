@@ -1,7 +1,7 @@
 <template>
   <div class="javacode-layout">
     <el-container>
-      <el-aside width="12%">
+      <el-aside width="20%">
         <el-menu default-active="1" class="el-menu-vertical">
           <el-menu-item index="1">
             <span>📐Data Operation</span>
@@ -15,19 +15,22 @@
         </el-menu>
       </el-aside>
       <el-main>
-        <el-row>
-          <el-col :span="22">
-            <el-input
-              style="top: 5%; font-size:20px"
-              v-model="input"
-              placeholder="Please input variable type + operation, eg.arraylist+new "
-            />
-          </el-col>
-          <el-col :span="2">
-            <el-button :icon="Search" circle size="large" @click="inputTranslator"/>
-          </el-col>
-        </el-row>
-        <h1 style="font-size: 50px">我是真的无语排版排了一天😂</h1>
+
+        <el-input v-model="input" type="textarea" :autosize="{ minRows: 5, maxRows: 9 }"
+          placeholder="original language">
+        </el-input>
+
+        <el-select size="small" style="top:45px" v-model="value" placeholder="Select one language">
+          <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value" />
+        </el-select>
+        <el-button type="info" circle size="small" style="top:45px" color="#626aef" @click="inputTranslator"></el-button>
+        <el-select size="small" style="top:45px" v-model="value_2" placeholder="Select one language">
+          <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value" />
+        </el-select>
+
+        <el-input v-model="object" style="top:100px" type="textarea" :autosize="{ minRows: 5, maxRows: 9 }"
+          placeholder="object language"></el-input>
+
       </el-main>
     </el-container>
   </div>
@@ -44,9 +47,33 @@ import {
   Star,
 } from '@element-plus/icons-vue'
 const input = ref("");
+const object = ref("");
+const value = ref('');
+const value_2 = ref('');
+const options = [
+  {
+    value: 'Option_Java',
+    label: 'Java',
+  },
+  {
+    value: 'Option_Python',
+    label: 'Python',
+  },
+  {
+    value: 'Option_C#',
+    label: 'C#',
+  },
+];
 
-function inputTranslator(){
-  console.log(input.value);
+function inputTranslator() {
+  console.log(value);
+  console.log(value_2);
+  if(value.value == value_2.value){
+    object.value = input.value;
+  }
+  else{
+    object.value = "translate";
+  }
 }
 
 </script>
@@ -55,12 +82,15 @@ function inputTranslator(){
 .javacode-layout {
   height: 100%;
 }
+
 .el-container {
   height: 100%;
 }
+
 .el-aside {
   top: 5%;
 }
+
 span {
   font-size: 20px;
 }
