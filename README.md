@@ -1,8 +1,10 @@
 # preview 
 I use java/python/c#/js at the same time, making me confused at times.  
 So I want to develop a code generator for reference.  It's something like language translating.  
-At first I don't wanna use any algorithms, but it seems like I need one. So maybe I'll add server-side code later.  
-![image](https://user-images.githubusercontent.com/55687413/201648800-422f1183-3e43-427e-882e-efe68a861279.png)
+At first I don't wanna use any algorithms, but it seems like I need one. So I'll add server-side code later.  
+   
+![c3348c23677c2f225f0b8df06a40603](https://user-images.githubusercontent.com/55687413/201818243-b6ceebd2-b13b-439c-8180-121512e3abaa.png)
+![Uploading 4fd89f549625edcfa18fb5494066697.png…]()
 
 
 # vue-project
