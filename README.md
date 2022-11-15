@@ -4,7 +4,9 @@ So I want to develop a code generator for reference.  It's something like langua
 At first I don't wanna use any algorithms, but it seems like I need one. So I'll add server-side code later.  
    
 ![c3348c23677c2f225f0b8df06a40603](https://user-images.githubusercontent.com/55687413/201818243-b6ceebd2-b13b-439c-8180-121512e3abaa.png)
-![Uploading 4fd89f549625edcfa18fb5494066697.png…]()
+  
+![9f2a594289102636352a1d70034e395](https://user-images.githubusercontent.com/55687413/201818430-4d21bf47-9134-4635-b35a-392c10c214d1.png)
+
 
 
 # vue-project
