@@ -3,14 +3,11 @@
     <el-container>
       <el-aside width="20%">
         <el-menu default-active="1" class="el-menu-vertical">
-          <el-menu-item index="1">
+          <el-menu-item index="1" @click="func=1">
             <span>📐Data Operation</span>
           </el-menu-item>
-          <el-menu-item index="2">
+          <el-menu-item index="2" @click="func=2">
             <span>🎶Logic Operation</span>
-          </el-menu-item>
-          <el-menu-item index="3">
-            <span>🥤Want More</span>
           </el-menu-item>
         </el-menu>
       </el-aside>
@@ -50,6 +47,7 @@ const input = ref("");
 const object = ref("");
 const value = ref('');
 const value_2 = ref('');
+const func = ref(0);
 const options = [
   {
     value: 'Option_Java',
@@ -66,15 +64,15 @@ const options = [
 ];
 
 function inputTranslator() {
-  console.log(value);
-  console.log(value_2);
   if(value.value == value_2.value){
-    object.value = input.value;
+    object.value = input.value + 'func:' + func.value;
   }
   else{
-    object.value = "translate";
+    object.value = "translate" + 'func:' + func.value;
   }
 }
+
+
 
 </script>
 

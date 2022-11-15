@@ -1,15 +1,12 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1 style="left: 40%">Feel free to contact me, meow~</h1>
+    <el-image src="imgs\myCat.jpg" fit="contain" style="width: 60%; left: 20%; top: 10%"></el-image>
   </div>
 </template>
 
 <style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+.about {
+  height: 100%;
 }
 </style>

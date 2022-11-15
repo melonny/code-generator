@@ -7,7 +7,7 @@ import { RouterLink, RouterView } from "vue-router";
     <el-container>
       <el-header>
         <nav>
-          <RouterLink to="/Java">🧁Home</RouterLink>
+          <RouterLink to="/code">🧁Home</RouterLink>
           <RouterLink to="/about">💎About</RouterLink>
         </nav>
       </el-header>

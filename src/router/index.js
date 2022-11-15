@@ -20,8 +20,8 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
-      path: '/Java',
-      name: 'Java', 
+      path: '/code',
+      name: 'code', 
       component: Javacode
     },
     {
